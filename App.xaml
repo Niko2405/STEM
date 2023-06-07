@@ -1,0 +1,12 @@
+﻿<Application x:Class="Omega.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Omega"
+             StartupUri="LoginWindow.xaml">
+    <Application.Resources>
+		<FontFamily x:Key="OpenSansRegular">./Fonts/OpenSans-Regular.ttf#Open Sans</FontFamily>
+		<FontFamily x:Key="OpenSansBold">./Fonts/OpenSans-Bold.ttf#Open Sans</FontFamily>
+		<FontFamily x:Key="OpenSansSemiBold">./Fonts/OpenSans-SemiBold.ttf#Open Sans</FontFamily>
+		<FontFamily x:Key="OpenSansExtraBold">./Fonts/OpenSans-ExtraBold.ttf#Open Sans</FontFamily>
+    </Application.Resources>
+</Application>
