@@ -11,12 +11,9 @@
 	<Window.Background>
 		<ImageBrush ImageSource="{StaticResource steamBackground}"></ImageBrush>
 	</Window.Background>
+	
 	<Grid>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
@@ -25,24 +22,44 @@
 			<RowDefinition></RowDefinition>
 			<RowDefinition></RowDefinition>
 			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
 		</Grid.RowDefinitions>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="0" Grid.Row="0" Foreground="White" FontSize="26">X:0 Y:0</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="1" Grid.Row="0" Foreground="White" FontSize="26">X:1 Y:0</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="2" Grid.Row="0" Foreground="White" FontSize="26">X:2 Y:0</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="3" Grid.Row="0" Foreground="White" FontSize="26">X:3 Y:0</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="4" Grid.Row="0" Foreground="White" FontSize="26">X:4 Y:0</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="5" Grid.Row="0" Foreground="White" FontSize="26">X:5 Y:0</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="6" Grid.Row="0" Foreground="White" FontSize="26">X:6 Y:0</Label>
-		
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="1" Grid.Row="1" Foreground="White" FontSize="26">X:1 Y:1</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="2" Grid.Row="2" Foreground="White" FontSize="26">X:2 Y:2</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="3" Grid.Row="3" Foreground="White" FontSize="26">X:3 Y:3</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="4" Grid.Row="4" Foreground="White" FontSize="26">X:4 Y:4</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="5" Grid.Row="5" Foreground="White" FontSize="26">X:5 Y:5</Label>
-		<Label BorderBrush="White" BorderThickness="1" Grid.Column="6" Grid.Row="6" Foreground="White" FontSize="26">X:6 Y:6</Label>
+		<StackPanel Grid.Column="1" Grid.Row="1">
+			<Label Foreground="White" FontFamily="{StaticResource OpenSansBold}" FontSize="32" HorizontalAlignment="Center" Margin="0,25,0,15">STEM Login Terminal</Label>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+				</Grid.RowDefinitions>
+
+				<!-- Username Input -->
+				<Label Grid.Column="0" Grid.Row="0" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="24" HorizontalAlignment="Left">Username</Label>
+				<TextBox Grid.Column="1" Grid.Row="0" x:Name="TextboxUsername" FontFamily="{StaticResource OpenSansRegular}" FontSize="22" Margin="5" TextAlignment="Center">root</TextBox>
+
+				<!-- Password Input -->
+				<Label Grid.Column="0" Grid.Row="1" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="24" HorizontalAlignment="Left">Password</Label>
+				<TextBox Grid.Column="1" Grid.Row="1" x:Name="TextboxPassword" FontFamily="{StaticResource OpenSansRegular}" FontSize="22" Margin="5" TextAlignment="Center">Start123</TextBox>
+
+				<!-- Server Input -->
+				<Label Grid.Column="0" Grid.Row="2" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="24" HorizontalAlignment="Left">Server Adress</Label>
+				<TextBox Grid.Column="1" Grid.Row="2" x:Name="TextboxServerAdress" FontFamily="{StaticResource OpenSansRegular}" FontSize="22" Margin="5" TextAlignment="Center">127.0.0.1</TextBox>
+			</Grid>
+			<Grid Margin="50">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition></RowDefinition>
+				</Grid.RowDefinitions>
+				<Button x:Name="ButtonExit" Grid.Column="0" Grid.Row="0" Click="ButtonExit_Click" FontFamily="{StaticResource OpenSansBold}" FontSize="24" HorizontalAlignment="Center" Width="200">Exit</Button>
+				<Button x:Name="ButtonLogin" Grid.Column="1" Grid.Row="0" Click="ButtonLogin_Click" FontFamily="{StaticResource OpenSansBold}" FontSize="24" HorizontalAlignment="Center" Width="200">Login</Button>
+			</Grid>
+		</StackPanel>
 	</Grid>
 </Window>

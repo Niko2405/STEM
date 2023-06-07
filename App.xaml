@@ -5,10 +5,11 @@
 			 DispatcherUnhandledException="Application_DispatcherUnhandledException"
              StartupUri="LoginWindow.xaml">
 	<Application.Resources>
-		<FontFamily x:Key="OpenSansRegular">./fonts/OpenSans-Regular.ttf#Open Sans</FontFamily>
-		<FontFamily x:Key="OpenSansBold">./fonts/OpenSans-Bold.ttf#Open Sans</FontFamily>
-		<FontFamily x:Key="OpenSansSemiBold">./fonts/OpenSans-SemiBold.ttf#Open Sans</FontFamily>
-		<FontFamily x:Key="OpenSansExtraBold">./fonts/OpenSans-ExtraBold.ttf#Open Sans</FontFamily>
+		<!-- OpenSans Schrift-->
+		<FontFamily x:Key="OpenSansRegular">pack://application:,,,/STEM;component/fonts/OpenSans-Regular.ttf#Open Sans</FontFamily>
+		<FontFamily x:Key="OpenSansBold">pack://application:,,,/STEM;component/fonts/OpenSans-Bold.ttf#Open Sans</FontFamily>
+		<FontFamily x:Key="OpenSansSemiBold">pack://application:,,,/STEM;component/fonts/OpenSans-SemiBold.ttf#Open Sans</FontFamily>
+		<FontFamily x:Key="OpenSansExtraBold">pack://application:,,,/STEM;component/fonts/OpenSans-ExtraBold.ttf#Open Sans</FontFamily>
 		
 		<!-- Verweis zum Pfad -->
 		<ImageSource x:Key="steamBackground">pack://application:,,,/STEM;component/images/stem_background.png</ImageSource>

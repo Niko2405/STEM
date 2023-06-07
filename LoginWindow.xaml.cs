@@ -22,8 +22,17 @@ namespace STEM
 	{
 		public LoginWindow()
 		{
-			MessageBox.Show("Hello, " + System.Environment.UserName + ". Program is locked in test mode. Server is deactivated! The login will be \nUsername: root\nPassword: root", "TEST MODE", MessageBoxButton.OK, MessageBoxImage.Warning);
+			MessageBox.Show("Hello, " + System.Environment.UserName + ". Program is locked in test mode. Server is unreachable!", "LOCKED", MessageBoxButton.OK, MessageBoxImage.Warning);
 			InitializeComponent();
+		}
+		private void ButtonLogin_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("No function imported in resources. Idiot", "Fatal Error", MessageBoxButton.OK,MessageBoxImage.Error);
+		}
+
+		private void ButtonExit_Click(object sender, RoutedEventArgs e)
+		{
+			System.Environment.Exit(0);
 		}
 	}
 }

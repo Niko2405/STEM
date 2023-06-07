@@ -13,6 +13,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="fonts\OpenSans-Bold.ttf" />
+    <None Remove="fonts\OpenSans-ExtraBold.ttf" />
+    <None Remove="fonts\OpenSans-Regular.ttf" />
+    <None Remove="fonts\OpenSans-SemiBold.ttf" />
     <None Remove="images\stem_background.png" />
   </ItemGroup>
 
@@ -21,6 +25,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="fonts\OpenSans-Bold.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="fonts\OpenSans-ExtraBold.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="fonts\OpenSans-Regular.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="fonts\OpenSans-SemiBold.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\stem_background.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
