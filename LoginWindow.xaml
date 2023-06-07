@@ -1,18 +1,12 @@
-﻿<Window x:Class="Omega.LoginWindow"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		xmlns:local="clr-namespace:Omega"
-		mc:Ignorable="d"
-		AllowsTransparency="True" WindowStyle="None"
-		WindowStartupLocation="CenterScreen" WindowState="Maximized"
-		Title="Login" Width="1920" Height="1080">
-	<Window.Background>
-		<SolidColorBrush Opacity="0.9" Color="Black"></SolidColorBrush>
-	</Window.Background>
+﻿<Window x:Class="STEM.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STEM"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
 
-	<DockPanel LastChildFill="False">
-		<Label DockPanel.Dock="Top" Foreground="White" FontFamily="{StaticResource OpenSansBold}" FontWeight="Bold" FontSize="68" HorizontalAlignment="Center" Margin="0,120,0,0">STEM</Label>
-	</DockPanel>
+    </Grid>
 </Window>
