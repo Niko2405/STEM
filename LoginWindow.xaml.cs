@@ -22,6 +22,7 @@ namespace STEM
 	{
 		public LoginWindow()
 		{
+			MessageBox.Show("Hello, " + System.Environment.UserName + ". Program is locked in test mode. Server is deactivated! The login will be \nUsername: root\nPassword: root", "TEST MODE", MessageBoxButton.OK, MessageBoxImage.Warning);
 			InitializeComponent();
 		}
 	}

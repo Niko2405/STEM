@@ -13,7 +13,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\stem_background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Program.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\stem_background.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
