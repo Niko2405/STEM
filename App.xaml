@@ -12,6 +12,6 @@
 		<FontFamily x:Key="OpenSansExtraBold">pack://application:,,,/STEM;component/fonts/OpenSans-ExtraBold.ttf#Open Sans</FontFamily>
 		
 		<!-- Verweis zum Pfad -->
-		<ImageSource x:Key="steamBackground">pack://application:,,,/STEM;component/images/stem_background.png</ImageSource>
+		<ImageSource x:Key="stemBackground">pack://application:,,,/STEM;component/images/stem_background.png</ImageSource>
 	</Application.Resources>
 </Application>

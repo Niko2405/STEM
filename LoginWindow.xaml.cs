@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace STEM
 {
@@ -22,12 +10,27 @@ namespace STEM
 	{
 		public LoginWindow()
 		{
-			MessageBox.Show("Hello, " + System.Environment.UserName + ". Program is locked in test mode. Server is unreachable!", "LOCKED", MessageBoxButton.OK, MessageBoxImage.Warning);
+			MessageBox.Show("Hello, " + System.Environment.UserName.ToUpper() + ". Program is locked in test mode. Server is unreachable!", "LOCKED", MessageBoxButton.OK, MessageBoxImage.Warning);
 			InitializeComponent();
 		}
-		private void ButtonLogin_Click(object sender, RoutedEventArgs e)
+		private async void ButtonLogin_Click(object sender, RoutedEventArgs e)
 		{
-			MessageBox.Show("No function imported in resources. Idiot", "Fatal Error", MessageBoxButton.OK,MessageBoxImage.Error);
+			// INIT
+			InitWindow initWindow = new InitWindow();
+			MenuWindow menuWindow = new MenuWindow();
+			initWindow.Show();
+
+			// Wait for init is finish
+			while (!Init.Initialized)
+			{
+				await Task.Delay(100);
+			}
+			MessageBox.Show("Components initialized", "Init", MessageBoxButton.OK, MessageBoxImage.Information);
+			
+			// show the main menu window
+			menuWindow.Show();
+			this.Close();
+			//MessageBox.Show("No function imported in resources. Idiot", "Fatal Error", MessageBoxButton.OK,MessageBoxImage.Error);
 		}
 
 		private void ButtonExit_Click(object sender, RoutedEventArgs e)

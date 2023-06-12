@@ -9,7 +9,7 @@
 		WindowStartupLocation="CenterScreen" WindowState="Maximized"
 		Title="Login" Width="1920" Height="1080">
 	<Window.Background>
-		<ImageBrush ImageSource="{StaticResource steamBackground}"></ImageBrush>
+		<ImageBrush ImageSource="{StaticResource stemBackground}"></ImageBrush>
 	</Window.Background>
 	
 	<Grid>
@@ -61,5 +61,7 @@
 				<Button x:Name="ButtonLogin" Grid.Column="1" Grid.Row="0" Click="ButtonLogin_Click" FontFamily="{StaticResource OpenSansBold}" FontSize="24" HorizontalAlignment="Center" Width="200">Login</Button>
 			</Grid>
 		</StackPanel>
+		<!-- Version -->
+		<Label Grid.Column="2" Grid.Row="2" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom">v0.0.0.2</Label>
 	</Grid>
 </Window>
