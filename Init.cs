@@ -5,7 +5,6 @@ namespace STEM
 {
 	class Init
 	{
-		public static bool Initialized = false;
 		public static void CreateDirectories()
 		{
 			string rootDirectory = "STEM/";

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace STEM
 {
@@ -10,6 +11,16 @@ namespace STEM
 		public MenuWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void ButtonConsole_Click(object sender, RoutedEventArgs e)
+		{
+			MenuControl.Content = new UserControl_Console();
+		}
+
+		private void ButtonExit_Click(object sender, RoutedEventArgs e)
+		{
+			Environment.Exit(0);
 		}
 	}
 }

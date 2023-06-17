@@ -12,7 +12,7 @@
 		<ImageBrush ImageSource="{StaticResource stemBackground}"></ImageBrush>
 	</Window.Background>
 	
-	<Grid>
+	<Grid Margin="10">
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
@@ -47,7 +47,7 @@
 
 				<!-- Server Input -->
 				<Label Grid.Column="0" Grid.Row="2" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="24" HorizontalAlignment="Left">Server Adress</Label>
-				<TextBox Grid.Column="1" Grid.Row="2" x:Name="TextboxServerAdress" FontFamily="{StaticResource OpenSansRegular}" FontSize="22" Margin="5" TextAlignment="Center">127.0.0.1</TextBox>
+				<TextBox Grid.Column="1" Grid.Row="2" x:Name="TextboxServerAdress" FontFamily="{StaticResource OpenSansRegular}" FontSize="22" Margin="5" TextAlignment="Center" IsReadOnly="True">127.0.0.1</TextBox>
 			</Grid>
 			<Grid Margin="50">
 				<Grid.ColumnDefinitions>
@@ -62,6 +62,6 @@
 			</Grid>
 		</StackPanel>
 		<!-- Version -->
-		<Label Grid.Column="2" Grid.Row="2" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom">v0.0.0.2</Label>
+		<Label Grid.Column="2" Grid.Row="2" Foreground="White" FontFamily="{StaticResource OpenSansRegular}" FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom">v0.0.0.2</Label>
 	</Grid>
 </Window>

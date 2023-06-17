@@ -1,17 +1,46 @@
 ﻿<Window x:Class="STEM.MenuWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:STEM"
-        mc:Ignorable="d"
-        AllowsTransparency="True" WindowStyle="None"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:STEM"
+		mc:Ignorable="d"
+		AllowsTransparency="True" WindowStyle="None"
 		WindowStartupLocation="CenterScreen" WindowState="Maximized"
 		Title="MenuWindow" Width="1920" Height="1080">
 	<Window.Background>
 		<ImageBrush ImageSource="{StaticResource stemBackground}"></ImageBrush>
 	</Window.Background>
-    <Grid>
-		<Label Foreground="White" FontFamily="{StaticResource OpenSansBold}" FontSize="32" HorizontalAlignment="Stretch" Margin="0,25,0,15">[MENU LOADED]</Label>
-	</Grid>
+	<DockPanel LastChildFill="True">
+		<Grid DockPanel.Dock="Top" Margin="5">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Button Grid.Column="0" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 1</Button>
+			<Button Grid.Column="1" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 2</Button>
+			<Button Grid.Column="2" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 3</Button>
+			<Button x:Name="ButtonConsole" Click="ButtonConsole_Click" Grid.Column="3" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Console</Button>
+			<Button Grid.Column="4" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 5</Button>
+			<Button Grid.Column="5" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 6</Button>
+			<Button Grid.Column="6" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 7</Button>
+			<Button Grid.Column="7" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 8</Button>
+			<Button Grid.Column="8" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 9</Button>
+			<Button Grid.Column="9" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 10</Button>
+			<Button Grid.Column="10" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Button 11</Button>
+			<Button x:Name="ButtonExit" Click="ButtonExit_Click" Grid.Column="11" FontFamily="{StaticResource OpenSansBold}" FontSize="18" Margin="8" Height="45">Exit</Button>
+		</Grid>
+		<ContentControl x:Name="MenuControl" DockPanel.Dock="Bottom">
+		</ContentControl>
+	</DockPanel>
 </Window>

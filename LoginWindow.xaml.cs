@@ -13,23 +13,18 @@ namespace STEM
 			MessageBox.Show("Hello, " + System.Environment.UserName.ToUpper() + ". Program is locked in test mode. Server is unreachable!", "LOCKED", MessageBoxButton.OK, MessageBoxImage.Warning);
 			InitializeComponent();
 		}
-		private async void ButtonLogin_Click(object sender, RoutedEventArgs e)
+		private void ButtonLogin_Click(object sender, RoutedEventArgs e)
 		{
 			// INIT
-			InitWindow initWindow = new InitWindow();
+			Init.CreateDirectories();
 			MenuWindow menuWindow = new MenuWindow();
-			initWindow.Show();
 
-			// Wait for init is finish
-			while (!Init.Initialized)
-			{
-				await Task.Delay(100);
-			}
 			MessageBox.Show("Components initialized", "Init", MessageBoxButton.OK, MessageBoxImage.Information);
-			
+
 			// show the main menu window
 			menuWindow.Show();
 			this.Close();
+
 			//MessageBox.Show("No function imported in resources. Idiot", "Fatal Error", MessageBoxButton.OK,MessageBoxImage.Error);
 		}
 
